@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Mesa Boa</title>
+  <circle cx="32" cy="32" r="30" fill="#183b32"/>
+  <path d="M13 39h38M19 43h26M24 47h16" fill="none" stroke="#d9e987" stroke-linecap="round" stroke-width="2.6"/>
+  <path d="M18 35c0-8 6.3-14.5 14-14.5S46 27 46 35H18Z" fill="#d9e987"/>
+  <path d="M25 17c-2-2-2-4 0-6m7 6c-2-2-2-4 0-6m7 6c-2-2-2-4 0-6" fill="none" stroke="#fffdf5" stroke-linecap="round" stroke-width="2"/>
+  <circle cx="26" cy="29" r="1.5" fill="#df8051"/><circle cx="34" cy="25" r="1.5" fill="#df8051"/><circle cx="39" cy="31" r="1.5" fill="#df8051"/>
+</svg>

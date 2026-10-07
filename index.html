@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183b32" />
+    <meta name="description" content="Comida de verdade, feita com carinho. Confira o cardápio da Mesa Boa." />
+    <title>Mesa Boa — Cardápio</title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Mesa Boa, início">
+        <img src="assets/logo.svg" width="48" height="48" alt="" />
+        <span class="brand-copy"><strong>Mesa Boa</strong><small>COMIDA FEITA COM CARINHO</small></span>
+      </a>
+      <a class="header-order" href="#cardapio"><span class="bag-icon" aria-hidden="true">＋</span> Ver cardápio</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> FEITO NA HORA, DO NOSSO JEITO</p>
+          <h1 id="hero-title">Comida boa<br />deixa tudo <em>melhor.</em></h1>
+          <p class="hero-description">Receitas de casa, ingredientes fresquinhos e aquele sabor que abraça. Escolha seus favoritos.</p>
+          <a class="primary-link" href="#cardapio">Explorar o cardápio <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><span>Feito com cuidado<br /><strong>em cada pedido</strong></span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Prato de comida caseira com ingredientes frescos">
+          <div class="hero-photo"></div>
+          <div class="photo-stamp"><span>DA NOSSA</span><strong>cozinha</strong><span>PARA A SUA MESA</span></div>
+          <div class="floating-leaf leaf-one" aria-hidden="true">✳</div>
+          <div class="floating-leaf leaf-two" aria-hidden="true">✳</div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">ESCOLHA COM CALMA</p><h2 id="menu-title">Nosso cardápio</h2></div>
+          <p class="section-aside">Tudo preparado na hora<br />com ingredientes frescos <span aria-hidden="true">♡</span></p>
+        </div>
+
+        <nav class="category-list" aria-label="Categorias do cardápio">
+          <a class="category-chip is-active" href="#favoritos">Favoritos</a>
+          <a class="category-chip" href="#pratos">Pratos da casa</a>
+          <a class="category-chip" href="#acompanhamentos">Acompanhamentos</a>
+          <a class="category-chip" href="#bebidas">Bebidas</a>
+        </nav>
+
+        <div class="menu-group" id="favoritos">
+          <div class="group-heading"><h3>Queridinhos da casa</h3><span>02 opções</span></div>
+          <div class="product-grid">
+            <article class="product-card">
+              <img class="product-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Bowl colorido com folhas, legumes e grãos" />
+              <div class="product-content"><div class="product-topline"><span class="product-tag">MAIS PEDIDO</span><span class="product-time">◷ 25 min</span></div><h4>Bowl da horta</h4><p>Arroz soltinho, legumes grelhados, folhas frescas e nosso molho de ervas.</p><div class="product-bottom"><strong>R$ 28,00</strong><button type="button" disabled aria-label="Adicionar Bowl da horta, disponível na próxima etapa">＋</button></div></div>
+            </article>
+            <article class="product-card">
+              <img class="product-image" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85" alt="Salada fresca com vegetais coloridos" />
+              <div class="product-content"><div class="product-topline"><span class="product-tag tag-soft">LEVE E FRESCO</span><span class="product-time">◷ 20 min</span></div><h4>Salada bem vivida</h4><p>Mix de folhas, tomate docinho, cenoura, grãos e crocantes da casa.</p><div class="product-bottom"><strong>R$ 24,00</strong><button type="button" disabled aria-label="Adicionar Salada bem vivida, disponível na próxima etapa">＋</button></div></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-group secondary-group" id="pratos">
+          <div class="group-heading"><h3>Pratos da casa</h3><span>02 opções</span></div>
+          <div class="product-grid">
+            <article class="product-card compact-card"><img class="product-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Prato caseiro com vegetais frescos" /><div class="product-content"><div class="product-topline"><span class="product-tag tag-soft">DA CASA</span></div><h4>Prato de todo dia</h4><p>Arroz, feijão, legumes da estação e carinho em forma de almoço.</p><div class="product-bottom"><strong>R$ 32,00</strong><button type="button" disabled aria-label="Adicionar Prato de todo dia, disponível na próxima etapa">＋</button></div></div></article>
+            <article class="product-card compact-card"><img class="product-image" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Salada e legumes frescos preparados para servir" /><div class="product-content"><div class="product-topline"><span class="product-tag tag-soft">VEGETARIANO</span></div><h4>Verde por inteiro</h4><p>Legumes assados, folhas crocantes e molho cítrico de tahine.</p><div class="product-bottom"><strong>R$ 30,00</strong><button type="button" disabled aria-label="Adicionar Verde por inteiro, disponível na próxima etapa">＋</button></div></div></article>
+          </div>
+        </div>
+      </section>
+      <div class="later-sections" aria-label="Outras categorias"><span id="acompanhamentos">Acompanhamentos</span><span id="bebidas">Bebidas</span></div>
+    </main>
+
+    <footer class="site-footer"><img src="assets/logo.svg" alt="" width="34" height="34" /><span>Feito com afeto pela Mesa Boa</span><span class="footer-dot">•</span><span>Um sabor de cada vez</span></footer>
+  </body>
+</html>
