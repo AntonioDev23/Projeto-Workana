@@ -1,6 +1,6 @@
 # Mesa Boa — cardápio digital
 
-Projeto de prática inspirado em um anúncio do Workana. É um cardápio demonstrativo com HTML, CSS e JavaScript, pensado primeiro para celular.
+Projeto de prática inspirado em um anúncio do Workana. É uma simulação de marmitaria feita com HTML, CSS e JavaScript, pensada primeiro para celular. Tamanhos, combinações e preços são fictícios e servem para demonstrar o fluxo.
 
 ## Abrir no computador
 
@@ -14,4 +14,4 @@ O pedido é montado no navegador. O cliente ainda revisa e confirma o envio dent
 
 ## Editar o cardápio
 
-Os produtos, preços, categorias e imagens ficam no array `products`, no começo de `app.js`. O nome e a identidade visual da marca podem ser alterados em `index.html`, `styles.css` e `assets/logo.svg`.
+Os produtos, preços, categorias e tamanhos ficam no array `products`, no começo de `app.js`. As regras de proteína e acompanhamentos estão na mesma área. O nome e a identidade visual da marca podem ser alterados em `index.html`, `styles.css` e `assets/logo.svg`.

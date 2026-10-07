@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#183b32" />
-    <meta name="description" content="Comida de verdade, feita com carinho. Confira o cardápio da Mesa Boa." />
-    <title>Mesa Boa — Cardápio</title>
+    <meta name="description" content="Marmitas caseiras montadas do seu jeito. Confira o cardápio da Mesa Boa." />
+    <title>Mesa Boa — Marmitas e cardápio</title>
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -21,15 +21,15 @@
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> FEITO NA HORA, DO NOSSO JEITO</p>
-          <h1 id="hero-title">Comida boa<br />deixa tudo <em>melhor.</em></h1>
-          <p class="hero-description">Receitas de casa, ingredientes fresquinhos e aquele sabor que abraça. Escolha seus favoritos.</p>
+          <p class="eyebrow"><span></span> COMIDA DE VERDADE, FEITA NA HORA</p>
+          <h1 id="hero-title">Sua marmita,<br />do seu <em>jeito.</em></h1>
+          <p class="hero-description">Escolha o tamanho, a proteína e os acompanhamentos. A gente prepara com gostinho de comida caseira.</p>
           <a class="primary-link" href="#cardapio">Explorar o cardápio <span aria-hidden="true">↓</span></a>
           <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><span>Feito com cuidado<br /><strong>em cada pedido</strong></span></div>
         </div>
         <div class="hero-art" role="img" aria-label="Prato de comida caseira com ingredientes frescos">
           <div class="hero-photo"></div>
-          <div class="photo-stamp"><span>DA NOSSA</span><strong>cozinha</strong><span>PARA A SUA MESA</span></div>
+          <div class="photo-stamp"><span>COMIDA</span><strong>caseira</strong><span>FEITA COM CARINHO</span></div>
           <div class="floating-leaf leaf-one" aria-hidden="true">✳</div>
           <div class="floating-leaf leaf-two" aria-hidden="true">✳</div>
         </div>
@@ -37,13 +37,13 @@
 
       <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
         <div class="section-heading">
-          <div><p class="eyebrow">ESCOLHA COM CALMA</p><h2 id="menu-title">Nosso cardápio</h2></div>
-          <p class="section-aside">Tudo preparado na hora<br />com ingredientes frescos <span aria-hidden="true">♡</span></p>
+          <div><p class="eyebrow">MONTE DO SEU JEITO</p><h2 id="menu-title">Cardápio da casa</h2></div>
+          <p class="section-aside">Arroz e feijão inclusos<br />em todas as marmitas <span aria-hidden="true">♡</span></p>
         </div>
 
         <nav class="category-list" aria-label="Categorias do cardápio">
-          <button class="category-chip is-active" type="button" data-category="favoritos" aria-pressed="true">Favoritos</button>
-          <button class="category-chip" type="button" data-category="pratos" aria-pressed="false">Pratos da casa</button>
+          <button class="category-chip is-active" type="button" data-category="favoritos" aria-pressed="true">Mais pedidos</button>
+          <button class="category-chip" type="button" data-category="pratos" aria-pressed="false">Monte sua marmita</button>
           <button class="category-chip" type="button" data-category="acompanhamentos" aria-pressed="false">Acompanhamentos</button>
           <button class="category-chip" type="button" data-category="bebidas" aria-pressed="false">Bebidas</button>
         </nav>
@@ -56,13 +56,25 @@
         <button class="whatsapp-button" id="whatsapp-order" type="button">Montar pedido no WhatsApp <span aria-hidden="true">↗</span></button>
         <p class="cart-hint">O WhatsApp abrirá com a mensagem pronta para você revisar e enviar.</p>
       </dialog>
+      <dialog class="meal-dialog" id="meal-dialog" aria-labelledby="meal-title">
+        <div class="dialog-heading"><div><p class="eyebrow">DO SEU JEITO</p><h2 id="meal-title">Monte sua marmita</h2></div><button class="close-meal close-dialog" type="button" aria-label="Fechar montagem">×</button></div>
+        <p class="meal-intro" id="meal-intro"></p>
+        <form id="meal-form">
+          <fieldset class="choice-group"><legend>Tamanho <span id="size-rule"></span></legend><div class="size-options" id="size-options"></div></fieldset>
+          <fieldset class="choice-group"><legend>Proteínas <span id="protein-rule"></span></legend><div class="choice-options" id="protein-options"></div></fieldset>
+          <fieldset class="choice-group"><legend>Acompanhamentos <span id="side-rule"></span></legend><div class="choice-options" id="side-options"></div></fieldset>
+          <p class="meal-error" id="meal-error" aria-live="polite"></p>
+          <div class="meal-submit-row"><strong id="meal-price"></strong><button class="whatsapp-button" id="add-custom-meal" type="submit" disabled>Adicionar ao pedido</button></div>
+        </form>
+        <p class="cart-hint">Preços e combinações desta demonstração são fictícios.</p>
+      </dialog>
       <div class="cart-bar" aria-label="Resumo do pedido">
         <div class="cart-bar-copy"><span class="cart-count" id="cart-count">0</span><span><strong id="bar-total">R$ 0,00</strong><small id="bar-caption">Seu pedido começa aqui</small></span></div>
         <button class="view-cart" id="view-cart" type="button">Ver pedido <span aria-hidden="true">→</span></button>
       </div>
     </main>
 
-    <footer class="site-footer"><img src="assets/logo.svg" alt="" width="34" height="34" /><span>Feito com afeto pela Mesa Boa</span><span class="footer-dot">•</span><span>Um sabor de cada vez</span></footer>
+    <footer class="site-footer"><img src="assets/logo.svg" alt="" width="34" height="34" /><span>Feito com afeto pela Mesa Boa</span><span class="footer-dot">•</span><span>Preços simulados para este exercício</span></footer>
     <script src="app.js"></script>
   </body>
 </html>
