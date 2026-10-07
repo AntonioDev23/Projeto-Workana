@@ -9,19 +9,20 @@
   --line: #e8e8df;
   --lime: #d9e987;
   --orange: #df8051;
-  font-family: "DM Sans", sans-serif;
+  font-family: Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
 * { box-sizing: border-box; }
+button { font-family: inherit; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--cream); color: var(--ink); }
+body { margin: 0; padding-bottom: 82px; background: var(--cream); color: var(--ink); }
 a { color: inherit; text-decoration: none; }
 .site-header { width: min(1180px, calc(100% - 64px)); height: 88px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; }
 .brand img { width: 47px; height: 47px; }
 .brand-copy { display: grid; gap: 3px; }
-.brand-copy strong { font: 700 21px/1 "Playfair Display", Georgia, serif; letter-spacing: -.4px; color: var(--green); }
+.brand-copy strong { font: 700 21px/1 Arial, sans-serif; letter-spacing: -.4px; color: var(--green); }
 .brand-copy small { font-size: 8px; font-weight: 700; letter-spacing: 1.45px; color: #718076; }
 .header-order { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; }
 .bag-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--lime); color: var(--green); font-size: 22px; }
@@ -31,7 +32,7 @@ a { color: inherit; text-decoration: none; }
 .hero .eyebrow { color: #c4d5a0; }
 .hero .eyebrow span { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: var(--lime); vertical-align: 1px; }
 h1, h2, h3, h4, p { margin-top: 0; }
-h1 { margin: 18px 0 13px; font: 600 clamp(42px, 5.1vw, 66px)/1.06 "Playfair Display", Georgia, serif; letter-spacing: -1.9px; }
+h1 { margin: 18px 0 13px; font: 600 clamp(42px, 5.1vw, 66px)/1.06 Arial, sans-serif; letter-spacing: -1.9px; }
 h1 em { color: var(--lime); font-weight: 600; }
 .hero-description { max-width: 380px; margin-bottom: 25px; color: #d0dbd2; font-size: 14px; line-height: 1.7; }
 .primary-link { display: inline-flex; align-items: center; gap: 15px; padding: 13px 17px; border-radius: 5px; background: var(--lime); color: var(--green); font-size: 12px; font-weight: 700; }
@@ -43,22 +44,22 @@ h1 em { color: var(--lime); font-weight: 600; }
 .hero-photo { position: absolute; inset: 0 0 0 28px; background: linear-gradient(135deg, rgba(22,45,34,.05), rgba(22,45,34,.12)), url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=90") center 48%/cover; border-radius: 48% 48% 46% 46%; border: 9px solid rgba(248,247,238,.15); outline: 1px solid rgba(248,247,238,.3); outline-offset: 6px; }
 .photo-stamp { width: 116px; height: 116px; position: absolute; right: -8px; bottom: 16px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 50%; background: var(--lime); color: var(--green); transform: rotate(9deg); box-shadow: 0 10px 24px #10271f55; }
 .photo-stamp span { font-size: 7px; font-weight: 700; letter-spacing: 1px; }
-.photo-stamp strong { margin: 1px 0; font: italic 700 22px "Playfair Display", Georgia, serif; }
+.photo-stamp strong { margin: 1px 0; font: italic 700 22px Arial, sans-serif; }
 .floating-leaf { position: absolute; color: var(--orange); }
 .leaf-one { top: 7px; left: 11px; font-size: 32px; }
 .leaf-two { right: 23px; top: 42px; color: var(--lime); font-size: 19px; }
 .menu-section { width: min(1050px, calc(100% - 64px)); margin: 76px auto 0; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 25px; }
-h2 { margin: 7px 0 0; color: var(--green); font: 600 38px/1.1 "Playfair Display", Georgia, serif; letter-spacing: -.7px; }
+h2 { margin: 7px 0 0; color: var(--green); font: 600 38px/1.1 Arial, sans-serif; letter-spacing: -.7px; }
 .section-aside { margin: 0 4px 3px 0; color: var(--muted); font-size: 11px; line-height: 1.7; text-align: right; }
 .section-aside span { color: var(--orange); font-size: 15px; }
 .category-list { display: flex; gap: 9px; overflow-x: auto; padding: 3px 0 18px; scrollbar-width: none; }
 .category-list::-webkit-scrollbar { display: none; }
-.category-chip { flex: 0 0 auto; padding: 10px 16px; border: 1px solid #e6e7dc; border-radius: 999px; color: #627067; background: #fbfaf6; font-size: 11px; font-weight: 600; }
+.category-chip { flex: 0 0 auto; padding: 10px 16px; border: 1px solid #e6e7dc; border-radius: 999px; color: #627067; background: #fbfaf6; font: 600 11px Arial, sans-serif; cursor: pointer; }
 .category-chip.is-active { color: white; border-color: var(--green); background: var(--green); }
 .menu-group { margin-top: 19px; }
 .group-heading { display: flex; align-items: baseline; gap: 11px; margin-bottom: 14px; }
-.group-heading h3 { margin: 0; color: var(--green); font: 600 22px "Playfair Display", Georgia, serif; }
+.group-heading h3 { margin: 0; color: var(--green); font: 600 22px Arial, sans-serif; }
 .group-heading span { color: #9b9f94; font-size: 10px; }
 .product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .product-card { min-width: 0; display: grid; grid-template-columns: 39% 1fr; background: var(--paper); border: 1px solid #eeeee6; border-radius: 9px; overflow: hidden; box-shadow: 0 5px 16px #283c2810; }
@@ -68,8 +69,8 @@ h2 { margin: 7px 0 0; color: var(--green); font: 600 38px/1.1 "Playfair Display"
 .product-tag { padding: 5px 7px; border-radius: 3px; color: var(--green); background: #e9efcb; font-size: 7px; font-weight: 700; letter-spacing: .7px; white-space: nowrap; }
 .tag-soft { color: #a6623e; background: #f8eadd; }
 .product-time { color: #969c93; font-size: 9px; white-space: nowrap; }
-.product-content h4 { margin: 13px 0 6px; color: var(--green); font: 600 20px/1.15 "Playfair Display", Georgia, serif; }
-.product-content p { margin: 0 0 15px; color: #788078; font-size: 10px; line-height: 1.6; }
+.product-content h4 { margin: 13px 0 6px; color: var(--green); font: 600 20px/1.15 Arial, sans-serif; }
+.product-content p { margin: 0 0 15px; color: #536159; font-size: 12px; line-height: 1.55; }
 .product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; }
 .product-bottom strong { color: var(--green); font-size: 14px; }
 .product-bottom button { width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--green); color: white; font-size: 20px; line-height: 1; }
@@ -81,6 +82,35 @@ h2 { margin: 7px 0 0; color: var(--green); font: 600 38px/1.1 "Playfair Display"
 .site-footer { width: min(1180px, calc(100% - 64px)); min-height: 74px; margin: 0 auto; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 10px; color: #858d84; font-size: 10px; }
 .site-footer img { opacity: .85; }
 .footer-dot { color: var(--orange); }
+.cart-bar { position: fixed; z-index: 5; right: 0; bottom: 0; left: 0; min-height: 72px; padding: 10px max(24px, calc((100% - 1050px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid #e7e9df; background: #fffefaed; backdrop-filter: blur(14px); }
+.cart-bar-copy { display: flex; align-items: center; gap: 12px; }
+.cart-count { min-width: 32px; height: 32px; padding: 0 8px; display: grid; place-items: center; border-radius: 50%; background: var(--lime); color: var(--green); font-size: 12px; font-weight: 700; }
+.cart-bar-copy strong, .cart-bar-copy small { display: block; }
+.cart-bar-copy strong { color: var(--green); font-size: 13px; }
+.cart-bar-copy small { margin-top: 2px; color: #828b82; font-size: 9px; }
+.view-cart, .whatsapp-button { border: 0; border-radius: 5px; background: var(--green); color: white; font: 700 12px Arial, sans-serif; cursor: pointer; }
+.view-cart { padding: 12px 17px; }
+.view-cart span { margin-left: 12px; font-size: 16px; }
+.view-cart:disabled { background: #d7ddd4; color: #718076; cursor: not-allowed; }
+.cart-dialog { width: min(480px, calc(100% - 28px)); max-height: min(80vh, 680px); padding: 25px; border: 1px solid #e5e8dd; border-radius: 12px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 90px #10271f44; }
+.cart-dialog::backdrop { background: #10271f88; backdrop-filter: blur(3px); }
+.dialog-heading { display: flex; align-items: start; justify-content: space-between; margin-bottom: 18px; }
+.dialog-heading h2 { font-size: 30px; }
+.close-dialog { width: 34px; height: 34px; border: 0; border-radius: 50%; background: #eef0e6; color: var(--green); font-size: 23px; cursor: pointer; }
+.cart-items { display: grid; gap: 12px; max-height: 42vh; overflow: auto; }
+.cart-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.cart-row-info strong, .cart-row-info span { display: block; }
+.cart-row-info strong { color: var(--green); font: 600 16px Arial, sans-serif; }
+.cart-row-info span { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.quantity-control { display: flex; align-items: center; gap: 9px; }
+.quantity-control button { width: 27px; height: 27px; border: 1px solid #dce1d6; border-radius: 50%; background: white; color: var(--green); font-size: 16px; cursor: pointer; }
+.quantity-control span { min-width: 14px; text-align: center; font-size: 12px; font-weight: 700; }
+.empty-cart { margin: 10px 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.cart-total { display: flex; justify-content: space-between; margin: 18px 0; color: var(--green); font-size: 14px; }
+.cart-total strong { font-size: 17px; }
+.whatsapp-button { width: 100%; padding: 14px 16px; background: #248653; }
+.whatsapp-button span { margin-left: 7px; }
+.cart-hint { margin: 10px 0 0; color: #858d84; text-align: center; font-size: 9px; line-height: 1.5; }
 
 @media (max-width: 760px) {
   .site-header { width: calc(100% - 36px); height: 72px; }
@@ -112,12 +142,14 @@ h2 { margin: 7px 0 0; color: var(--green); font: 600 38px/1.1 "Playfair Display"
   .product-image { min-height: 178px; }
   .product-content { padding: 14px 13px 12px; }
   .product-content h4 { margin-top: 11px; font-size: 19px; }
-  .product-content p { font-size: 10px; }
+  .product-content p { font-size: 12px; }
   .product-tag { font-size: 6px; padding: 5px 6px; }
   .product-time { font-size: 8px; }
   .secondary-group { margin-top: 29px; }
   .compact-card .product-image { min-height: 168px; }
   .site-footer { width: calc(100% - 32px); min-height: 66px; font-size: 9px; }
+  .cart-bar { min-height: 66px; padding: 8px 16px calc(8px + env(safe-area-inset-bottom)); }
+  .cart-dialog { padding: 20px; }
 }
 @media (max-width: 380px) {
   .hero { padding-inline: 20px; }
